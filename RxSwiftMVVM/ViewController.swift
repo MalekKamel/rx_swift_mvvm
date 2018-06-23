@@ -12,24 +12,24 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet private var emailsLabel: UILabel!
-    @IBOutlet private var getCommentsButton: UIButton!
-    @IBOutlet private var loadingView: UIActivityIndicatorView!
+    @IBOutlet private var lbl_emails: UILabel!
+    @IBOutlet private var btn_emails: UIButton!
+    @IBOutlet private var aiv: UIActivityIndicatorView!
     
     let disposeBag = DisposeBag()
     let viewModel = ViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindButtonToViewModel()
-        observeLoading()
-        observeEmailString()
+        getComments()
+        loading()
+        bindComments()
     }
     
     // MARK: Private
     
-    private func bindButtonToViewModel() {
-        self.getCommentsButton
+    private func getComments() {
+        self.btn_emails
             .rx
             .tap
             .asObservable()
@@ -37,17 +37,17 @@ class ViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
-    private func observeLoading() {
+    private func loading() {
         self.viewModel
             .isLoadingObservable
-            .bind(to: self.loadingView.rx.isAnimating)
+            .bind(to: self.aiv.rx.isAnimating)
             .disposed(by: self.disposeBag)
     }
     
-    private func observeEmailString() {
+    private func bindComments() {
         self.viewModel
             .emailStringObservable
-            .bind(to: self.emailsLabel.rx.text)
+            .bind(to: self.lbl_emails.rx.text)
             .disposed(by: disposeBag)
     }
 }
