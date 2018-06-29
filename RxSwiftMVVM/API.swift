@@ -2,8 +2,7 @@
 //  API.swift
 //  RxSwiftMVVM
 //
-//  Created by Dalton Claybrook on 10/6/17.
-//  Copyright © 2017 Dalton Claybrook. All rights reserved.
+//  Created by Sha on 6/23/18.
 //
 
 import Moya

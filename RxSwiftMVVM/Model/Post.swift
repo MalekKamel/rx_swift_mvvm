@@ -3,7 +3,6 @@
 //  RxSwiftMVVM
 //
 //  Created by Sha on 6/23/18.
-//  Copyright © 2018 Dalton Claybrook. All rights reserved.
 //
 
 import Foundation

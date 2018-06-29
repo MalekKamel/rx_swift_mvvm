@@ -2,15 +2,14 @@
 //  ViewController.swift
 //  RxSwiftMVVM
 //
-//  Created by Dalton Claybrook on 10/6/17.
-//  Copyright © 2017 Dalton Claybrook. All rights reserved.
+//  Created by Sha on 6/23/18.
 //
 
 import RxCocoa
 import RxSwift
 import UIKit
 
-class ViewController: UIViewController {
+class EmailViewController: UIViewController {
     
     @IBOutlet private var lbl_emails: UILabel!
     @IBOutlet private var btn_emails: UIButton!
