@@ -1,5 +1,5 @@
 # RxSwiftMvvm
-### An example of RxSwift and MVVM design pattern
+### An example of RxSwift and MVVM architecure
 
 # License
 
