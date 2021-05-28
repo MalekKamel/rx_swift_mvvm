@@ -1,5 +1,5 @@
 # RxSwiftMvvm
-### An example of RxSwift and MVVM architecture
+### An example of RxSwift and MVVM architecture.
 
 # License
 
